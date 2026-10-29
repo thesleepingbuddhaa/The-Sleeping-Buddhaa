@@ -80,8 +80,43 @@ const cartCatalog=[...allProductDetails,{id:'decor-01',name:"Sage Living Room Ed
 const money=n=>'₹'+n.toLocaleString('en-IN');
 function productImages(p){return p.images&&p.images.length?p.images:(p.image?[p.image]:[])}
 function renderProducts(){products.innerHTML=demoProducts.map(p=>{const imgs=productImages(p);const first=imgs[0]||'';return `<article class="product"><div class="product-image ${p.type} ${p.tone}" style="--garment:${p.colour}" onclick="openProductDetail('${p.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProductDetail('${p.id}')}">${first?`<img src="${first}" alt="${p.name}" loading="lazy" data-product-image="${p.id}" style="width:100%;height:100%;object-fit:cover">`:''}</div><div class="product-info"><div><h3 role="button" tabindex="0" onclick="openProductDetail('${p.id}')" onkeydown="if(event.key==='Enter')openProductDetail('${p.id}')">${p.name}</h3><p>${p.desc}</p></div><span class="price">${money(p.price)}</span></div>${(p.type==='glasses'||p.type==='rings')?'':`<label class="field"><span>Size</span><select id="size-${p.id}"><option value="S">S</option><option value="M" selected>M</option><option value="L">L</option><option value="XL">XL</option><option value="XXL">XXL</option></select></label>`}<button class="add" onclick="addToCart('${p.id}')">Add to bag +</button></article>`}).join('');startCollectionSliders()}
-let collectionSliderTimers=[];
-function startCollectionSliders(){collectionSliderTimers.forEach(clearInterval);collectionSliderTimers=[];[...demoProducts,fragranceProduct,frenchEssenceProduct].forEach(p=>{const imgs=productImages(p);if(imgs.length<2)return;let i=0;const timer=setInterval(()=>{const image=document.querySelector('[data-product-image="'+p.id+'"]');if(!image||document.body.classList.contains('product-detail-mode'))return;i=(i+1)%imgs.length;image.src=imgs[i]},3000);collectionSliderTimers.push(timer)})}
+const collectionSliderTimers=[];
+function startCollectionSliders(){
+  collectionSliderTimers.forEach(item=>{if(item.timer)clearInterval(item.timer);if(item.observer)item.observer.disconnect();});
+  collectionSliderTimers.length=0;
+  const isTouch=('ontouchstart' in window)||navigator.maxTouchPoints>0;
+  [...demoProducts,fragranceProduct,frenchEssenceProduct].forEach(p=>{
+    const imgs=productImages(p);if(imgs.length<2)return;
+    const image=document.querySelector('[data-product-image="'+p.id+'"]');
+    if(!image)return;
+    const card=image.closest('.product-image');if(!card)return;
+    let i=0,timer=null,visible=false,hovered=false;
+    const stop=()=>{if(timer){clearInterval(timer);timer=null;}};
+    const start=()=>{
+      if(timer||document.body.classList.contains('product-detail-mode'))return;
+      timer=setInterval(()=>{
+        if(document.body.classList.contains('product-detail-mode')){stop();return;}
+        i=(i+1)%imgs.length;image.src=imgs[i];
+      },3000);
+    };
+    if(isTouch){
+      const observer=new IntersectionObserver(entries=>{
+        visible=entries.some(entry=>entry.isIntersecting);
+        if(visible)start();else stop();
+      },{threshold:0.25});
+      observer.observe(card);
+      collectionSliderTimers.push({observer,timer:null});
+    }else{
+      card.addEventListener('mouseenter',()=>{hovered=true;start();});
+      card.addEventListener('mouseleave',()=>{hovered=false;stop();});
+      card.addEventListener('focusin',()=>{hovered=true;start();});
+      card.addEventListener('focusout',()=>{hovered=false;stop();});
+      collectionSliderTimers.push({timer:null,observer:null});
+    }
+    const state=collectionSliderTimers[collectionSliderTimers.length-1];
+    state.stop=stop;
+  });
+}
 let activeDetailProduct=null,activeDetailImage=0;
 function openProductDetail(id){const p=allProductDetails.find(item=>item.id===id);if(!p)return;activeDetailProduct=p;activeDetailImage=0;document.body.classList.add('product-detail-mode');renderProductDetail();window.scrollTo(0,0)}
 function closeProductDetail(){const target=activeDetailProduct&&['wildplay-chocolate-perfume','french-essence-bloom'].includes(activeDetailProduct.id)?'fragrances':'shop-wearables';document.body.classList.remove('product-detail-mode');activeDetailProduct=null;window.scrollTo(0,document.getElementById(target).offsetTop)}
