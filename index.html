@@ -97,7 +97,7 @@ function startCollectionSliders(){
       timer=setInterval(()=>{
         if(document.body.classList.contains('product-detail-mode')){stop();return;}
         i=(i+1)%imgs.length;image.src=imgs[i];
-      },3000);
+      },1000);
     };
     if(isTouch){
       const observer=new IntersectionObserver(entries=>{
