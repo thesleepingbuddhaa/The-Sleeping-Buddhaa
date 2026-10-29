@@ -72,6 +72,18 @@ body.product-detail-mode #productDetail{display:block}
  .category-art{border-radius:12px}
 }
 
+
+/* Four product cards per row on desktop; preserve image aspect ratio */
+@media(min-width:1000px){
+ .products{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+ .product{padding:10px 10px 12px}
+ .product-info{gap:8px}
+ .product-info h3{font-size:16px}
+}
+@media(min-width:701px) and (max-width:999px){
+ .products{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+}
+
 </style>
 </head>
 <body>
