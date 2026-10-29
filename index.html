@@ -73,12 +73,17 @@ body.product-detail-mode #productDetail{display:block}
 }
 
 
-/* Four product cards per row on desktop; preserve image aspect ratio */
-@media(min-width:1000px){
- .products{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
- .product{padding:10px 10px 12px}
- .product-info{gap:8px}
- .product-info h3{font-size:16px}
+/* Five product cards per row on desktop; preserve image aspect ratio */
+@media(min-width:1200px){
+ .products{grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+ .product{padding:8px 8px 10px}
+ .product-info{gap:7px}
+ .product-info h3{font-size:14px}
+}
+@media(min-width:1000px) and (max-width:1199px){
+ .products{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+ .product{padding:9px 9px 11px}
+ .product-info h3{font-size:15px}
 }
 @media(min-width:701px) and (max-width:999px){
  .products{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
