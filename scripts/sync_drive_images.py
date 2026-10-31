@@ -57,7 +57,7 @@ def main() -> None:
 
             product_folder = match.group("product").strip()
             # Keep the prefix exactly as written, while preventing unsafe path components.
-            if not product_folder or product_folder in {".", ".."} or "/" in product_folder or "\\\\" in product_folder:
+            if not product_folder or product_folder in {".", ".."} or "/" in product_folder or "\\" in product_folder:
                 print(f"Skipping unsafe product prefix: {filename}")
                 continue
 
