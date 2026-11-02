@@ -90,111 +90,75 @@ body.product-detail-mode #productDetail{display:block}
 }
 
 
-/* Funky editorial identity with iOS-inspired frosted-glass product tiles */
-:root{
- --ink:#102f22;--paper:#f9ebd7;--muted:#5d665c;--line:rgba(16,47,34,.22);
- --emerald:#046a38;--vermilion:#e34222;--glass:rgba(255,250,240,.38);
- --serif:Georgia,'Times New Roman',serif;
-}
-html{background:var(--paper)}
-body{
- color:var(--ink);
- background:
-  radial-gradient(ellipse at 91% 17%,rgba(227,66,34,.88) 0 10%,transparent 10.3%),
-  radial-gradient(ellipse at 8% 42%,rgba(4,106,56,.72) 0 8%,transparent 8.4%),
-  radial-gradient(ellipse at 78% 66%,rgba(4,106,56,.72) 0 12%,transparent 12.4%),
-  radial-gradient(ellipse at 17% 83%,rgba(227,66,34,.76) 0 10%,transparent 10.4%),
-  var(--paper);
- background-attachment:fixed;
-}
-.announcement{background:var(--emerald);color:var(--paper);letter-spacing:.2em}
-.header{
- position:relative;background:rgba(249,235,215,.58);
- backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
- border-bottom:1px solid rgba(16,47,34,.2);
-}
-.brand{color:var(--emerald);font-weight:700;letter-spacing:.04em;text-transform:none}
-.nav{color:var(--ink);font-weight:700;letter-spacing:.06em}
-.cart-button,.button{border-color:var(--emerald);color:var(--emerald);border-radius:999px;font-weight:700}
-.cart-button:hover,.button:hover{background:var(--emerald);color:var(--paper)}
-.hero{
- position:relative;isolation:isolate;overflow:hidden;
- min-height:500px;padding-top:82px;padding-bottom:74px;
- background:transparent;
-}
-.hero:before{
- content:"";position:absolute;z-index:-1;width:430px;height:430px;border-radius:50%;
- right:-80px;top:28px;background:var(--vermilion);opacity:.94;
- box-shadow:0 0 95px 34px rgba(227,66,34,.18);
-}
-.hero:after{
- content:"";position:absolute;z-index:-1;width:360px;height:360px;border-radius:50%;
- right:16%;bottom:-250px;background:var(--emerald);filter:blur(34px);opacity:.65;
-}
-.hero .eyebrow{color:var(--emerald);font-weight:700}
-.hero h1{
- max-width:720px;color:var(--emerald);font-family:Arial,Helvetica,sans-serif;
- font-weight:900;text-transform:uppercase;letter-spacing:-.075em;
- line-height:.82;font-size:clamp(58px,9vw,118px);
-}
-.hero p{color:#33483a;font-size:15px;max-width:450px}
-.hero .button.primary{background:var(--emerald);color:var(--paper)}
-.hero .button.primary:hover{background:var(--vermilion);border-color:var(--vermilion)}
-.hero-art{background:transparent;min-height:330px}
-.hero-logo{filter:drop-shadow(0 18px 22px rgba(16,47,34,.12));position:relative;z-index:1}
+/* Muted sage, warm cream and burgundy editorial identity */
+:root{--ink:#24231f;--paper:#a5a79b;--muted:#55574f;--line:rgba(35,27,25,.22);--sage:#a5a79b;--cream:#e8d2b5;--burgundy:#590907;--serif:Georgia,'Times New Roman',serif}
+html{background:var(--sage)}
+body{color:var(--ink);background-color:var(--sage);background-image:linear-gradient(116deg,transparent 0 39%,rgba(89,9,7,.96) 39.1% 51%,transparent 51.1%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 700'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M-40 110 C90 40 150 75 250 28 M-30 130 C80 75 150 105 250 55 M-20 150 C70 110 150 135 230 85' stroke='%23590907' stroke-width='20' opacity='.9'/%3E%3Cpath d='M610 90 C700 20 780 50 930 -10 M600 115 C710 45 800 85 940 20 M590 140 C710 80 820 115 950 50' stroke='%23e8d2b5' stroke-width='15' opacity='.95'/%3E%3Cpath d='M-20 590 C120 490 180 540 310 450 M-10 620 C120 530 200 565 330 485 M10 650 C130 570 220 595 350 520' stroke='%23590907' stroke-width='23' opacity='.92'/%3E%3Cpath d='M640 650 C740 560 820 610 930 520 M650 680 C760 600 830 640 940 555' stroke='%23e8d2b5' stroke-width='17' opacity='.85'/%3E%3C/g%3E%3C/svg%3E");background-size:100% 100%,100% auto;background-position:center top;background-repeat:no-repeat;background-attachment:fixed}
+.announcement{background:var(--burgundy);color:var(--cream);letter-spacing:.2em}
+.header{position:relative;background:rgba(232,210,181,.46);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(89,9,7,.24)}
+.brand{color:var(--burgundy);font-weight:700;letter-spacing:.04em;text-transform:none}
+.nav{color:var(--ink);font-weight:700;letter-spacing:.07em}
+.cart-button,.button{border:1px solid var(--burgundy);color:var(--burgundy);border-radius:999px;font-weight:700}
+.cart-button:hover,.button:hover{background:var(--burgundy);color:var(--cream)}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:530px;padding:86px 5vw 72px;background:transparent;grid-template-columns:1.05fr .95fr}
+.hero:before{content:"";position:absolute;z-index:-2;inset:-10% 27% -15% 43%;background:var(--burgundy);transform:skewX(-27deg);opacity:.98}
+.hero:after{content:"";position:absolute;z-index:-1;right:-5%;top:34%;width:60%;height:42%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 260'%3E%3Cg fill='none' stroke='%23e8d2b5' stroke-linecap='round'%3E%3Cpath d='M-20 170 C130 20 240 70 360 0 M-10 195 C130 65 240 105 380 25 M20 220 C150 100 250 135 400 55 M300 255 C430 110 560 135 730 10' stroke-width='18'/%3E%3Cpath d='M20 135 C140 25 250 55 360 -10 M100 250 C250 115 350 150 500 45' stroke-width='7'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat;pointer-events:none}
+.hero-copy{position:relative;z-index:2}
+.hero .eyebrow{color:var(--burgundy);font-weight:800;max-width:160px;line-height:1.6}
+.hero h1{margin:28px 0 18px;max-width:700px;font-family:Impact,'Arial Narrow',Arial,sans-serif;font-size:clamp(64px,9vw,122px);font-stretch:condensed;font-weight:900;line-height:.78;letter-spacing:-.055em;text-transform:uppercase;transform:skewX(-5deg)}
+.hero h1 span{display:block;color:var(--burgundy)}
+.hero h1 em{display:block;color:var(--cream);font-style:normal}
+.hero .hero-tagline{font-family:var(--serif);font-style:italic;font-size:clamp(18px,2vw,25px);color:var(--burgundy);letter-spacing:.03em}
+.hero .button.primary{background:var(--burgundy);color:var(--cream);border-color:var(--burgundy);padding:15px 25px}
+.hero .button.primary:hover{background:var(--ink);border-color:var(--ink)}
+.hero-side-note{margin-top:34px;padding-left:15px;border-left:4px solid var(--burgundy);font-size:10px;line-height:1.7;letter-spacing:.18em;text-transform:uppercase;max-width:180px}
+.hero-art{position:relative;min-height:380px;background:transparent;overflow:visible}
+.hero-buddha-mark{position:absolute;z-index:1;inset:2% 6% 0 4%;display:flex;align-items:center;justify-content:center}
+.hero-logo{width:100%;height:100%;max-height:430px;object-fit:contain;filter:grayscale(1) contrast(1.15);mix-blend-mode:multiply;opacity:.88}
+.hero-orbit{position:absolute;z-index:2;width:105%;height:52%;border:1px solid rgba(232,210,181,.8);border-radius:50%;transform:rotate(-28deg);top:23%;left:-5%;pointer-events:none}
+.hero-brush{position:absolute;z-index:3;display:block;pointer-events:none}
+.hero-brush-one{width:95%;height:34%;right:-13%;bottom:14%;background:var(--cream);clip-path:polygon(0 48%,9% 32%,20% 42%,34% 10%,49% 30%,63% 0,77% 20%,100% 5%,91% 43%,100% 54%,77% 58%,62% 82%,47% 67%,30% 100%,15% 73%,3% 90%);opacity:.96;transform:rotate(-12deg)}
+.hero-brush-two{width:34%;height:24%;left:-4%;bottom:4%;background:var(--burgundy);clip-path:polygon(0 42%,16% 20%,32% 35%,49% 0,64% 22%,82% 9%,100% 30%,86% 60%,100% 80%,69% 73%,52% 100%,31% 70%,12% 91%);transform:rotate(-8deg)}
 .section{position:relative}
-.section-head h2,.story h2{color:var(--emerald);font-weight:700;letter-spacing:-.04em}
-.eyebrow{color:var(--vermilion);font-weight:700}
-.note{color:#536357}
-.category-art{border:1px solid rgba(255,255,255,.7);box-shadow:0 12px 34px rgba(16,47,34,.1)}
-.category-art:before{opacity:.72}
-.category-link{color:var(--emerald);border-color:var(--vermilion);font-weight:700}
+.section-head h2,.story h2{color:var(--burgundy);font-weight:700;letter-spacing:-.04em}
+.section-head{position:relative}
+#fragrances .section-head:after{content:"";position:absolute;z-index:-1;left:-5vw;bottom:-15px;width:42%;height:50px;background:var(--cream);clip-path:polygon(0 38%,18% 10%,36% 30%,54% 0,70% 25%,100% 5%,93% 62%,72% 72%,52% 100%,31% 68%,12% 88%);transform:rotate(-3deg)}
+.eyebrow{color:var(--burgundy);font-weight:700}
+.note{color:#4d5048}
 .products{position:relative;z-index:1;gap:20px}
-.product{
- background:rgba(255,250,240,.34)!important;
- border:1px solid rgba(255,255,255,.72)!important;
- border-radius:24px!important;
- box-shadow:0 12px 36px rgba(16,47,34,.10),inset 0 1px 0 rgba(255,255,255,.72)!important;
- backdrop-filter:blur(22px) saturate(145%);
- -webkit-backdrop-filter:blur(22px) saturate(145%);
- overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;
-}
-.product:hover{
- transform:translateY(-6px);
- box-shadow:0 18px 42px rgba(16,47,34,.16),inset 0 1px 0 rgba(255,255,255,.85)!important;
-}
-.product-image,.product-image:has(>img){
- background:rgba(255,255,255,.08)!important;border-radius:17px!important;
-}
+.product{background:rgba(232,210,181,.27)!important;border:1px solid rgba(255,255,255,.72)!important;border-radius:24px!important;box-shadow:0 12px 36px rgba(35,25,20,.12),inset 0 1px 0 rgba(255,255,255,.8)!important;backdrop-filter:blur(22px) saturate(135%);-webkit-backdrop-filter:blur(22px) saturate(135%);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.product:hover{transform:translateY(-6px);box-shadow:0 18px 42px rgba(35,25,20,.18),inset 0 1px 0 rgba(255,255,255,.9)!important}
+.product-image,.product-image:has(>img){background:rgba(255,255,255,.08)!important;border-radius:17px!important}
 .product-image>img{mix-blend-mode:multiply}
 .product-info h3{color:var(--ink);font-weight:700}
-.product-info p{color:#4f5d52}
-.product-info .price{color:var(--vermilion);font-weight:800}
-.product .add{
- color:var(--emerald);background:rgba(255,255,255,.34);
- border:1px solid rgba(255,255,255,.78);border-radius:999px;
- font-weight:700;backdrop-filter:blur(12px);
-}
-.product .add:hover{background:var(--vermilion);border-color:var(--vermilion);color:#fff}
-.detail-main-image{background:rgba(255,250,240,.55);backdrop-filter:blur(18px)}
-.detail-add,.checkout{background:var(--emerald);border-radius:999px}
-.detail-add:hover,.checkout:hover{background:var(--vermilion)}
-.drawer{background:rgba(249,235,215,.94);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
-.drawer-head{border-color:rgba(16,47,34,.2)}
-.drawer h2{color:var(--emerald)}
-.cart-item{border-color:rgba(16,47,34,.18)}
-.field input,.field select,.field textarea{background:rgba(255,255,255,.68);border:1px solid rgba(16,47,34,.18);border-radius:12px}
-.total strong{color:var(--vermilion)}
-.story{border-color:rgba(16,47,34,.2);background:rgba(249,235,215,.3);backdrop-filter:blur(12px)}
-.footer{color:var(--emerald);border-top:1px solid rgba(16,47,34,.18)}
-.bag-float{background:var(--emerald);border-color:var(--emerald);border-radius:999px;box-shadow:0 12px 32px rgba(4,106,56,.25)}
-.bag-float:hover{background:var(--vermilion);border-color:var(--vermilion)}
+.product-info p{color:#4f5049}
+.product-info .price{color:var(--burgundy);font-weight:800}
+.product .add{color:var(--burgundy);background:rgba(232,210,181,.28);border:1px solid rgba(255,255,255,.78);border-radius:999px;font-weight:700;backdrop-filter:blur(12px)}
+.product .add:hover{background:var(--burgundy);border-color:var(--burgundy);color:var(--cream)}
+.category-art{border:1px solid rgba(255,255,255,.7);box-shadow:0 12px 34px rgba(35,25,20,.12)}
+.category-link{color:var(--burgundy);border-color:var(--burgundy);font-weight:700}
+.detail-main-image{background:rgba(232,210,181,.5);backdrop-filter:blur(18px)}
+.detail-add,.checkout{background:var(--burgundy);border-radius:999px}
+.detail-add:hover,.checkout:hover{background:var(--ink)}
+.drawer{background:rgba(232,210,181,.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+.drawer-head{border-color:rgba(89,9,7,.2)}
+.drawer h2{color:var(--burgundy)}
+.cart-item{border-color:rgba(89,9,7,.18)}
+.field input,.field select,.field textarea{background:rgba(255,255,255,.68);border:1px solid rgba(89,9,7,.18);border-radius:12px}
+.total strong{color:var(--burgundy)}
+.story{border-color:rgba(89,9,7,.2);background:rgba(232,210,181,.3);backdrop-filter:blur(12px)}
+.footer{color:var(--burgundy);border-top:1px solid rgba(89,9,7,.18)}
+.bag-float{background:var(--burgundy);border-color:var(--burgundy);border-radius:999px;box-shadow:0 12px 32px rgba(89,9,7,.25)}
+.bag-float:hover{background:var(--ink);border-color:var(--ink)}
 @media(max-width:700px){
- .hero{min-height:0;padding-top:52px;padding-bottom:42px}
- .hero:before{width:250px;height:250px;right:-105px;top:95px}
- .hero:after{width:220px;height:220px;right:0;bottom:-150px}
- .hero h1{font-size:clamp(48px,14vw,78px);line-height:.88}
- .hero-art{min-height:220px}
+ .hero{min-height:0;padding:48px 5vw 36px;grid-template-columns:1fr;gap:8px}
+ .hero:before{inset:20% -18% -5% 44%;transform:skewX(-24deg)}
+ .hero:after{right:-12%;top:48%;width:80%;height:34%}
+ .hero h1{font-size:clamp(54px,15vw,82px);line-height:.82}
+ .hero-art{min-height:240px}
+ .hero-buddha-mark{inset:0 12% 0 12%}
+ .hero-logo{max-height:260px}
+ .hero-side-note{margin-top:24px}
  .products{gap:12px}
  .product{border-radius:17px!important;padding:8px 8px 10px}
  .product-image,.product-image:has(>img){border-radius:12px!important}
@@ -208,7 +172,7 @@ body{
 <div class="announcement">A quieter kind of everyday style · Demo store preview</div>
 <header class="header"><a class="brand" href="#">The Sleeping Buddha</a><nav class="nav"><a href="#home-decor">Home Decor</a><a href="#gift-items">Gift Items</a><a href="#aesthetics">Aesthetics</a><a href="#wearables">Wearables</a><a href="#fragrances">Fragrances</a></nav><button class="cart-button" id="openCart">Bag (<span id="cartCount">0</span>)</button></header>
 <main>
-<section class="hero"><div><div class="eyebrow">Considered essentials · Preview collection</div><h1>Less noise.<br>More meaning.</h1><p>Everyday pieces for a slower, more considered wardrobe. Explore the preview collection and send your selection to us on WhatsApp when you're ready.</p><div class="hero-actions"><a class="button primary" href="#shop">Explore the collection</a><a class="button" href="#story">Our philosophy</a></div></div><div class="hero-art"><img class="hero-logo" src="./logo-transparent.png" alt="The Sleeping Buddha official logo"></div></section>
+<section class="hero"><div class="hero-copy"><div class="eyebrow">Curated finds · A more expressive everyday</div><h1><span>Timeless</span><em>Aesthetics</em></h1><p class="hero-tagline">Decor, Gifts, Wearables &amp; More</p><div class="hero-actions"><a class="button primary" href="#categories">Explore collection <span aria-hidden="true">→</span></a></div><div class="hero-side-note">Thoughtful pieces<br>for everyday living</div></div><div class="hero-art"><div class="hero-buddha-mark"><img class="hero-logo" src="./logo-transparent.png" alt="The Sleeping Buddha emblem"></div><span class="hero-orbit"></span><span class="hero-brush hero-brush-one"></span><span class="hero-brush hero-brush-two"></span></div></section>
 <section class="section" id="categories"><div class="section-head"><div><div class="eyebrow">Explore by category</div><h2>Find your kind of everyday.</h2></div><p class="note">Four curated worlds, brought together by thoughtful design and a love for the little details.</p></div>
 <div class="category-grid">
 <article class="category-card" id="home-decor"><a class="category-art home" href="#shop-home-decor" aria-label="Shop Home Decor"><img src="./images/homedecor.png" alt="" loading="lazy"><span>Home Decor</span></a><p>Objects, lighting and small details that make a space feel like yours.</p><a class="category-link" href="#shop-home-decor">Shop Home Decor ↗</a></article>
