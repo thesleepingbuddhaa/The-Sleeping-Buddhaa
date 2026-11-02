@@ -169,6 +169,24 @@ body{color:var(--olive);background-color:var(--sandstone);background-image:radia
 }
 @media(prefers-reduced-motion:reduce){.product,.product:hover{transition:none;transform:none}}
 
+
+/* Clear glass product tiles: no beige or amber fill */
+.product,
+.product:hover{
+  background:transparent!important;
+  -webkit-backdrop-filter:blur(28px) saturate(120%)!important;
+  backdrop-filter:blur(28px) saturate(120%)!important;
+  border:1px solid rgba(255,255,255,.78)!important;
+  box-shadow:0 10px 30px rgba(41,39,25,.10),inset 0 1px 0 rgba(255,255,255,.55)!important;
+}
+.product .add{
+  background:transparent!important;
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,.82)!important;
+}
+.product .add:hover{background:transparent!important;border-color:rgba(255,255,255,.95)!important}
+
 </style>
 </head>
 <body>
