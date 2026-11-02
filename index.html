@@ -382,6 +382,43 @@ body{
 }
 .product .add:hover{background:var(--vermilion)!important;border-color:var(--vermilion)!important;color:#fff!important}
 
+
+/* Subtle iOS-inspired liquid-glass motion */
+.product{isolation:isolate;overflow:hidden}
+.product::after{
+  content:"";
+  position:absolute;
+  inset:-60% -90%;
+  z-index:0;
+  pointer-events:none;
+  border-radius:inherit;
+  background:
+    linear-gradient(112deg,
+      transparent 34%,
+      rgba(255,255,255,0) 42%,
+      rgba(255,255,255,.30) 49%,
+      rgba(255,255,255,.10) 53%,
+      transparent 61%),
+    radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.10),transparent 58%);
+  transform:translateX(-38%) rotate(8deg);
+  animation:liquidGlassDrift 9s ease-in-out infinite;
+  opacity:.72;
+}
+.product>*{position:relative;z-index:1}
+.product:hover{
+  border-color:rgba(255,255,255,.94)!important;
+  -webkit-backdrop-filter:blur(26px) saturate(160%)!important;
+  backdrop-filter:blur(26px) saturate(160%)!important;
+}
+.product:hover::after{animation-duration:3.2s;opacity:1}
+@keyframes liquidGlassDrift{
+  0%,100%{transform:translateX(-38%) rotate(8deg)}
+  50%{transform:translateX(38%) rotate(8deg)}
+}
+@media(prefers-reduced-motion:reduce){
+  .product::after{animation:none;opacity:.35;transform:none}
+}
+
 </style>
 </head>
 <body>
