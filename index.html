@@ -419,6 +419,11 @@ body{
   .product::after{animation:none;opacity:.35;transform:none}
 }
 
+
+/* Remove decorative background artwork */
+html,body{background-color:var(--paper)!important}
+body{background-image:none!important;background-attachment:scroll!important}
+.hero:before,.hero:after,.hero-orbit,.hero-brush,.hero-brush-one,.hero-brush-two,#fragrances .section-head:after{display:none!important;content:none!important}
 </style>
 </head>
 <body>
