@@ -1,0 +1,40 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+carbblack
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 3
+
+1. carbblack_in_1.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\carbblack_in_1.png
+
+2. carbblack_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\carbblack_in_2.png
+
+3. carbblack_in_4.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\carbblack_in_4.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\carbblack
+
+EXACT OUTPUT FILENAMES
+----------------------
+carbblack_1.png
+carbblack_2.png
+carbblack_3.png
+carbblack_4.png
+carbblack_igpost_1.png
+carbblack_igpost_2.png
+carbblack_igstry_1.png
+carbblack_igstry_2.png

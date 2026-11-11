@@ -1,0 +1,37 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+perfumefrench
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 2
+
+1. perfumefrench_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\perfumefrench_in_2.png
+
+2. perfumefrench_in_3.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\perfumefrench_in_3.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\perfumefrench
+
+EXACT OUTPUT FILENAMES
+----------------------
+perfumefrench_1.png
+perfumefrench_2.png
+perfumefrench_3.png
+perfumefrench_4.png
+perfumefrench_igpost_1.png
+perfumefrench_igpost_2.png
+perfumefrench_igstry_1.png
+perfumefrench_igstry_2.png

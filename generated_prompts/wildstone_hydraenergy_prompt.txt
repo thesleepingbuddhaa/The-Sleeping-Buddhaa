@@ -1,0 +1,47 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+wildstone_hydraenergy
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 2
+
+1. wildstone_hydraenergy_in_1.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\wildstone_hydraenergy_in_1.png
+
+2. wildstone_hydraenergy_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\wildstone_hydraenergy_in_2.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\wildstone_hydraenergy
+
+EXACT OUTPUT FILENAMES
+----------------------
+wildstone_hydraenergy_1.png
+wildstone_hydraenergy_2.png
+wildstone_hydraenergy_3.png
+wildstone_hydraenergy_4.png
+wildstone_hydraenergy_igpost_1.png
+wildstone_hydraenergy_igpost_2.png
+wildstone_hydraenergy_igstry_1.png
+wildstone_hydraenergy_igstry_2.png
+
+POST-GENERATION ARCHIVING (IMPORTANT)
+--------------------------------------
+After image generation is complete, verify that ALL eight expected output files listed above have been saved in the output folder and that each file exists and is non-empty.
+Only after all eight output files pass this check, move every source image listed in SOURCE PRODUCT IMAGES into the product archive folder below.
+Archive folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\archived\wildstone_hydraenergy
+
+Preserve each source image's original filename. Create the product archive folder if it does not already exist. Do not overwrite an existing archived file; if a name conflict occurs, leave that source image in the input folder and report the conflict.
+After moving, verify that each source image exists in the archive folder and no longer exists in the input folder. Report the number of images archived and list any files that could not be moved.
+NEVER archive source images if any expected output is missing, empty, or not yet saved. If you cannot perform file moves with the available local-file permissions, do not claim that archiving succeeded; report that the images remain in the input folder.

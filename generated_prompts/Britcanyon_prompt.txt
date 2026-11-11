@@ -1,0 +1,40 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+Britcanyon
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 3
+
+1. Britcanyon_in_1.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Britcanyon_in_1.png
+
+2. Britcanyon_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Britcanyon_in_2.png
+
+3. Britcanyon_in_4.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Britcanyon_in_4.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\Britcanyon
+
+EXACT OUTPUT FILENAMES
+----------------------
+Britcanyon_1.png
+Britcanyon_2.png
+Britcanyon_3.png
+Britcanyon_4.png
+Britcanyon_igpost_1.png
+Britcanyon_igpost_2.png
+Britcanyon_igstry_1.png
+Britcanyon_igstry_2.png

@@ -1,0 +1,40 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+oxkom
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 3
+
+1. oxkom_in_1.jpeg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\oxkom_in_1.jpeg
+
+2. oxkom_in_4.jpeg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\oxkom_in_4.jpeg
+
+3. oxkom_in_5.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\oxkom_in_5.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\oxkom
+
+EXACT OUTPUT FILENAMES
+----------------------
+oxkom_1.png
+oxkom_2.png
+oxkom_3.png
+oxkom_4.png
+oxkom_igpost_1.png
+oxkom_igpost_2.png
+oxkom_igstry_1.png
+oxkom_igstry_2.png
