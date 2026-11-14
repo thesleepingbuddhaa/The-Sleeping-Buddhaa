@@ -1,0 +1,43 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+britaccent
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 4
+
+1. britaccent_in_1.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\britaccent_in_1.png
+
+2. britaccent_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\britaccent_in_2.png
+
+3. britaccent_in_3.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\britaccent_in_3.png
+
+4. britaccent_in_4.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\britaccent_in_4.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\britaccent
+
+EXACT OUTPUT FILENAMES
+----------------------
+britaccent_1.png
+britaccent_2.png
+britaccent_3.png
+britaccent_4.png
+britaccent_igpost_1.png
+britaccent_igpost_2.png
+britaccent_igstry_1.png
+britaccent_igstry_2.png

@@ -1,0 +1,43 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+retractabletowel_clip
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 4
+
+1. retractabletowel_clip_in_1.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\retractabletowel_clip_in_1.jpg
+
+2. retractabletowel_clip_in_2.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\retractabletowel_clip_in_2.jpg
+
+3. retractabletowel_clip_in_3.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\retractabletowel_clip_in_3.jpg
+
+4. retractabletowel_clip_in_4.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\retractabletowel_clip_in_4.jpg
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\retractabletowel_clip
+
+EXACT OUTPUT FILENAMES
+----------------------
+retractabletowel_clip_1.png
+retractabletowel_clip_2.png
+retractabletowel_clip_3.png
+retractabletowel_clip_4.png
+retractabletowel_clip_igpost_1.png
+retractabletowel_clip_igpost_2.png
+retractabletowel_clip_igstry_1.png
+retractabletowel_clip_igstry_2.png
