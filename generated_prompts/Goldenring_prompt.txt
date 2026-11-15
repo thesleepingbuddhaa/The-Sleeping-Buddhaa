@@ -13,7 +13,7 @@ Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
 SOURCE PRODUCT IMAGES
 ---------------------
 Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
-Number of source images: 3
+Number of source images: 5
 
 1. Goldenring_in_1.png
    Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Goldenring_in_1.png
@@ -23,6 +23,12 @@ Number of source images: 3
 
 3. Goldenring_in_3.png
    Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Goldenring_in_3.png
+
+4. Goldenring_in_6.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Goldenring_in_6.jpg
+
+5. Goldenring_in_7.jpg
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\Goldenring_in_7.jpg
 
 OUTPUT FOLDER
 -------------
