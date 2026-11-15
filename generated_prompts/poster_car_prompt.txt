@@ -1,0 +1,40 @@
+PRODUCT IMAGE-GENERATION JOB
+===========================
+
+PRODUCT NAME
+------------
+poster_car
+
+MASTER PROMPT FILE
+------------------
+Filename: prompt.txt
+Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\prompt.txt
+
+SOURCE PRODUCT IMAGES
+---------------------
+Input folder: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input
+Number of source images: 3
+
+1. poster_car_in_1.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\poster_car_in_1.png
+
+2. poster_car_in_2.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\poster_car_in_2.png
+
+3. poster_car_in_3.png
+   Full path: C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\input\poster_car_in_3.png
+
+OUTPUT FOLDER
+-------------
+C:\Users\Asus\OneDrive\Desktop\TheSleepingBuddhaa\output\poster_car
+
+EXACT OUTPUT FILENAMES
+----------------------
+poster_car_1.png
+poster_car_2.png
+poster_car_3.png
+poster_car_4.png
+poster_car_igpost_1.png
+poster_car_igpost_2.png
+poster_car_igstry_1.png
+poster_car_igstry_2.png
